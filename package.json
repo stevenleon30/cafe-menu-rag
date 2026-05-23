@@ -1,0 +1,27 @@
+{
+  "name": "cafe-menu-rag",
+  "version": "1.0.0",
+  "description": "A Promptfoo-based RAG evaluation framework for cafe AI assistants.",
+  "type": "module",
+  "main": "dist/src/rag-provider.js",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "node --import tsx --test",
+    "eval": "promptfoo eval --no-cache -c promptfooconfig.yaml -o output.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenleon30/cafe-menu-rag.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenleon30/cafe-menu-rag/issues"
+  },
+  "homepage": "https://github.com/stevenleon30/cafe-menu-rag#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "promptfoo": "^0.121.12",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}

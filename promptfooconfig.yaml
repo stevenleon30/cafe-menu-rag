@@ -1,0 +1,28 @@
+description: Cafe menu and customer service RAG evaluation suite
+providers:
+  - 'exec:npx tsx src/rag-provider.ts'
+prompts:
+  - '{{question}}'
+tests:
+  - vars:
+      question: 'How much is the cappuccino and can it be made with oat milk?'
+    assert:
+      - type: contains
+        value: '$4.50'
+      - type: contains
+        value: 'oat milk'
+  - vars:
+      question: 'What are your weekday hours?'
+    assert:
+      - type: contains
+        value: '8:00 AM-6:00 PM'
+  - vars:
+      question: 'How long do you hold mobile pickup orders?'
+    assert:
+      - type: contains
+        value: '30 minutes'
+  - vars:
+      question: 'Is the avocado toast vegan?'
+    assert:
+      - type: contains
+        value: 'vegan'

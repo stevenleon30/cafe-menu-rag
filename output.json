@@ -1,0 +1,461 @@
+{
+  "evalId": "eval-Zgd-2026-05-23T20:39:55",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-05-23T20:39:55.431Z",
+    "prompts": [
+      {
+        "id": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "raw": "{{question}}",
+        "label": "{{question}}",
+        "provider": "exec:npx tsx src/rag-provider.ts",
+        "metrics": {
+          "score": 4,
+          "testPassCount": 4,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 5,
+          "assertFailCount": 0,
+          "totalLatencyMs": 2910,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 4,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "namedScoreWeights": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "$4.50"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "oat milk"
+              }
+            }
+          ]
+        },
+        "id": "eeb47762-2a01-4946-988c-027f03754788",
+        "latencyMs": 728,
+        "namedScores": {},
+        "prompt": {
+          "raw": "How much is the cappuccino and can it be made with oat milk?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "exec:npx tsx src/rag-provider.ts",
+          "label": ""
+        },
+        "response": {
+          "output": "Based on the cafe knowledge base:\n- Cappuccino: name: Cappuccino category: Drink price: $4.50 ingredients: espresso, steamed milk, milk foam dietary: vegetarian details: Available hot or iced. Can be made with oat milk for a dairy-free option.\n- Avocado Toast: name: Avocado Toast category: Food price: $9.25 ingredients: sourdough, avocado, chili flakes, lemon, sea salt dietary: vegan details: Served all day and can be ordered without chili flakes on request."
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "question": "How much is the cappuccino and can it be made with oat milk?"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "$4.50"
+            },
+            {
+              "type": "contains",
+              "value": "oat milk"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "question": "How much is the cappuccino and can it be made with oat milk?"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "8:00 AM-6:00 PM"
+              }
+            }
+          ]
+        },
+        "id": "98464af7-d8be-456c-9d26-d7b2d2f63292",
+        "latencyMs": 713,
+        "namedScores": {},
+        "prompt": {
+          "raw": "What are your weekday hours?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "exec:npx tsx src/rag-provider.ts",
+          "label": ""
+        },
+        "response": {
+          "output": "Based on the cafe knowledge base:\n- store-info: # Store Details - Address: 123 Roast Lane, Seattle, WA 98101 - Weekday hours: Monday-Friday 8:00 AM-6:00 PM - Weekend hours: Saturday-Sunday 9:00 AM-4:00 PM - Wi-Fi: Free for all dine-in customers - Pickup policy: Mobile orders are held for 30 minutes after the ready notification - Contact: hello@cafemenurag.example"
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "question": "What are your weekday hours?"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "8:00 AM-6:00 PM"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "question": "What are your weekday hours?"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "30 minutes"
+              }
+            }
+          ]
+        },
+        "id": "76b64148-cc5c-4843-b8f2-3ec17e2a4297",
+        "latencyMs": 738,
+        "namedScores": {},
+        "prompt": {
+          "raw": "How long do you hold mobile pickup orders?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "exec:npx tsx src/rag-provider.ts",
+          "label": ""
+        },
+        "response": {
+          "output": "Based on the cafe knowledge base:\n- store-info: # Store Details - Address: 123 Roast Lane, Seattle, WA 98101 - Weekday hours: Monday-Friday 8:00 AM-6:00 PM - Weekend hours: Saturday-Sunday 9:00 AM-4:00 PM - Wi-Fi: Free for all dine-in customers - Pickup policy: Mobile orders are held for 30 minutes after the ready notification - Contact: hello@cafemenurag.example"
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "question": "How long do you hold mobile pickup orders?"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "30 minutes"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "question": "How long do you hold mobile pickup orders?"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "contains",
+                "value": "vegan"
+              }
+            }
+          ]
+        },
+        "id": "6cb27376-89a5-4b1f-8618-32861fd91f6b",
+        "latencyMs": 731,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Is the avocado toast vegan?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "exec:npx tsx src/rag-provider.ts",
+          "label": ""
+        },
+        "response": {
+          "output": "Based on the cafe knowledge base:\n- Avocado Toast: name: Avocado Toast category: Food price: $9.25 ingredients: sourdough, avocado, chili flakes, lemon, sea salt dietary: vegan details: Served all day and can be ordered without chili flakes on request."
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "question": "Is the avocado toast vegan?"
+          },
+          "assert": [
+            {
+              "type": "contains",
+              "value": "vegan"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "question": "Is the avocado toast vegan?"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 4,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 4,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "durationMs": 757,
+      "evaluationDurationMs": 757
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Cafe menu and customer service RAG evaluation suite",
+    "prompts": [
+      "{{question}}"
+    ],
+    "providers": [
+      "exec:npx tsx src/rag-provider.ts"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "question": "How much is the cappuccino and can it be made with oat milk?"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "$4.50"
+          },
+          {
+            "type": "contains",
+            "value": "oat milk"
+          }
+        ]
+      },
+      {
+        "vars": {
+          "question": "What are your weekday hours?"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "8:00 AM-6:00 PM"
+          }
+        ]
+      },
+      {
+        "vars": {
+          "question": "How long do you hold mobile pickup orders?"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "30 minutes"
+          }
+        ]
+      },
+      {
+        "vars": {
+          "question": "Is the avocado toast vegan?"
+        },
+        "assert": [
+          {
+            "type": "contains",
+            "value": "vegan"
+          }
+        ]
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "outputPath": [
+      "output.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.121.12",
+    "nodeVersion": "v24.15.0",
+    "platform": "linux",
+    "arch": "x64",
+    "exportedAt": "2026-05-23T20:39:56.263Z",
+    "evaluationCreatedAt": "2026-05-23T20:39:55.431Z"
+  },
+  "vars": [
+    "question"
+  ],
+  "runtimeOptions": {
+    "eventSource": "cli",
+    "showProgressBar": true,
+    "repeat": 1,
+    "maxConcurrency": 4,
+    "cache": false
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Cappuccino",
+    "category": "Drink",
+    "price": "$4.50",
+    "ingredients": ["espresso", "steamed milk", "milk foam"],
+    "dietary": ["vegetarian"],
+    "details": "Available hot or iced. Can be made with oat milk for a dairy-free option."
+  },
+  {
+    "name": "Avocado Toast",
+    "category": "Food",
+    "price": "$9.25",
+    "ingredients": ["sourdough", "avocado", "chili flakes", "lemon", "sea salt"],
+    "dietary": ["vegan"],
+    "details": "Served all day and can be ordered without chili flakes on request."
+  },
+  {
+    "name": "Blueberry Muffin",
+    "category": "Pastry",
+    "price": "$3.75",
+    "ingredients": ["flour", "blueberries", "butter", "eggs"],
+    "dietary": ["vegetarian"],
+    "details": "Baked fresh each morning until sold out."
+  }
+]
